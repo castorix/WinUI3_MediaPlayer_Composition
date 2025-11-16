@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="WinUI3_MediaPlayer_Composition.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WinUI3_MediaPlayer_Composition"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="WinUI3_MediaPlayer_Composition">
+
+    <Window.SystemBackdrop>
+        <DesktopAcrylicBackdrop/>
+    </Window.SystemBackdrop>
+
+    <!--<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
+    </StackPanel>-->
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <!--<RowDefinition Height="*"></RowDefinition>-->
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="2">
+            <Button x:Name="btn_LoadVideo" Click="btn_LoadVideo_Click" Margin="10, 13, 0, 10">Load video</Button>
+           
+            <TextBlock Margin="10, 19, 0, 0">
+                Opacity :
+            </TextBlock>
+            <Slider x:Name="sliderSpriteOpacity" Height="32" Width="200" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10, 13, 10, 0"
+                                        TickFrequency="0.01" TickPlacement="Inline" Maximum="1" Minimum="0" StepFrequency="0.01"
+                                        Value="{x:Bind SpriteOpacity, Mode=TwoWay}">
+            </Slider>    
+            
+            <TextBlock Margin="0, 19, 0, 0">
+                Rotation :
+            </TextBlock>
+            <Slider x:Name="sliderSpriteRotation" Height="32" Width="200" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10, 13, 10, 0"
+                            TickFrequency="1" TickPlacement="Inline" Maximum="180" Minimum="-180" StepFrequency="1"
+                            Value="{x:Bind SpriteRotation, Mode=TwoWay}">
+            </Slider>
+
+            <CheckBox x:Name="cbGrayscale" VerticalContentAlignment="Center" Padding="10, 5"
+            Content="Gray scale" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="0, 13, 0, 0" Checked="cbGrayscale_Checked">
+            </CheckBox>
+
+            <CheckBox x:Name="cbInvert" VerticalContentAlignment="Center" Padding="10, 5"
+            Content="Invert" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="0, 13, 0, 0" Checked="cbInvert_Checked">
+            </CheckBox>
+
+            <CheckBox x:Name="cbEmboss" VerticalContentAlignment="Center" Padding="10, 5"
+                          Content="Emboss" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="0, 13, 0, 0" Checked="cbEmboss_Checked" >
+            </CheckBox>
+            <Slider x:Name="sliderStrengthEmboss" Height="32" Width="120" Orientation="Horizontal" HorizontalAlignment="Left" Margin="10, 5, 10, 0"
+                    TickFrequency="0.1" TickPlacement="Inline" Maximum="10" Minimum="0" StepFrequency="0.1" 
+                    Value="{x:Bind StrengthEmboss, Mode=TwoWay}" Visibility="{Binding IsChecked, ElementName=cbEmboss}" >
+            </Slider>
+
+            <CheckBox x:Name="cbGaussianBlur" VerticalContentAlignment="Center" Padding="10, 5"
+                         Content="Gaussian Blur" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="0, 13, 0, 0" Checked="cbGaussianBlur_Checked" >
+            </CheckBox>
+            <Slider x:Name="sliderStandardDeviationGaussianBlur" Height="32" Width="120" Orientation="Horizontal" HorizontalAlignment="Left" Margin="10, 5, 10, 0"
+                        TickFrequency="1.0" TickPlacement="Inline" Maximum="50" Minimum="0" StepFrequency="1.0" 
+                    Value="{x:Bind GaussianBlur, Mode=TwoWay}" Visibility="{Binding IsChecked, ElementName=cbGaussianBlur}" >
+            </Slider>        
+
+        </StackPanel>
+        <Border x:Name="border1" Grid.Row="1" Grid.Column="0" Background="Transparent" BorderThickness="2" BorderBrush="Gray" Margin="10, 10, 5, 10">           
+            <Image Source="/Assets/Butterfly.png" Stretch="Fill"/>          
+        </Border>
+        <Border x:Name="border2" Grid.Row="1" Grid.Column="1" Background="Transparent" BorderThickness="2" BorderBrush="Gray" Margin="5, 10, 10, 10">
+            <Image Source="/Assets/Butterfly_Blue.png" Stretch="Fill"/>           
+        </Border>
+    </Grid>
+</Window>

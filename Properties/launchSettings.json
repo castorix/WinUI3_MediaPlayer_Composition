@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "WinUI3_MediaPlayer_Composition (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "WinUI3_MediaPlayer_Composition (Unpackaged)": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

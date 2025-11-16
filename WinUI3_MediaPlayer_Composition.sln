@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.36105.23 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinUI3_MediaPlayer_Composition", "WinUI3_MediaPlayer_Composition.csproj", "{9ED745FA-CFED-4009-AD5B-9BA047E73C39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9ED745FA-CFED-4009-AD5B-9BA047E73C39}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{9ED745FA-CFED-4009-AD5B-9BA047E73C39}.Debug|ARM64.Build.0 = Debug|ARM64
+		{9ED745FA-CFED-4009-AD5B-9BA047E73C39}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{9ED745FA-CFED-4009-AD5B-9BA047E73C39}.Debug|x64.ActiveCfg = Debug|x64
+		{9ED745FA-CFED-4009-AD5B-9BA047E73C39}.Debug|x64.Build.0 = Debug|x64
+		{9ED745FA-CFED-4009-AD5B-9BA047E73C39}.Debug|x64.Deploy.0 = Debug|x64
+		{9ED745FA-CFED-4009-AD5B-9BA047E73C39}.Debug|x86.ActiveCfg = Debug|x86
+		{9ED745FA-CFED-4009-AD5B-9BA047E73C39}.Debug|x86.Build.0 = Debug|x86
+		{9ED745FA-CFED-4009-AD5B-9BA047E73C39}.Debug|x86.Deploy.0 = Debug|x86
+		{9ED745FA-CFED-4009-AD5B-9BA047E73C39}.Release|ARM64.ActiveCfg = Release|ARM64
+		{9ED745FA-CFED-4009-AD5B-9BA047E73C39}.Release|ARM64.Build.0 = Release|ARM64
+		{9ED745FA-CFED-4009-AD5B-9BA047E73C39}.Release|ARM64.Deploy.0 = Release|ARM64
+		{9ED745FA-CFED-4009-AD5B-9BA047E73C39}.Release|x64.ActiveCfg = Release|x64
+		{9ED745FA-CFED-4009-AD5B-9BA047E73C39}.Release|x64.Build.0 = Release|x64
+		{9ED745FA-CFED-4009-AD5B-9BA047E73C39}.Release|x64.Deploy.0 = Release|x64
+		{9ED745FA-CFED-4009-AD5B-9BA047E73C39}.Release|x86.ActiveCfg = Release|x86
+		{9ED745FA-CFED-4009-AD5B-9BA047E73C39}.Release|x86.Build.0 = Release|x86
+		{9ED745FA-CFED-4009-AD5B-9BA047E73C39}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80F37937-ECB3-4F14-8061-A1E6A03DD097}
+	EndGlobalSection
+EndGlobal
